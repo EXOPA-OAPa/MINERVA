@@ -46,10 +46,25 @@
  summary.print_execution_summary ──► results_<target>.txt, results_<catalog>.txt, Log_*.txt
 ```
 
-The same structure as a flowchart (an updated version of Fig. A.1 of the paper; regenerate it
-with `scripts/make_flowchart.py`):
+The same structure as a diagram:
 
-<p align="center"><img src="../images/minerva_flowchart.svg" width="860" alt="MINERVA flowchart"></p>
+<p align="center"><img src="../images/minerva_overview.svg" width="860" alt="MINERVA overview"></p>
+
+### Detailed diagrams
+
+An updated version of Fig. A.1 of the paper, in two parts (regenerate them with
+`scripts/make_flowchart.py`, the overview with `scripts/make_overview.py`).
+
+<table>
+<tr>
+<td align="center"><b>1 · Synthetic star and RV time series</b><br><sub><a href="star.md">star</a> · <a href="signals.md">signals</a></sub></td>
+<td align="center"><b>2 · Sequential recovery</b><br><sub><a href="recovery.md">periodogram · fitting · detection</a></sub></td>
+</tr>
+<tr>
+<td><img src="../images/minerva_simulation.svg" alt="Synthetic star and RV time series"></td>
+<td><img src="../images/minerva_recovery.svg" alt="Sequential recovery"></td>
+</tr>
+</table>
 
 ### One Monte Carlo simulation
 

@@ -2,6 +2,8 @@
 
 [← API reference](README.md)
 
+<p align="center"><img src="../images/minerva_recovery.svg" width="700" alt="Sequential recovery"></p>
+
 At every step of the sequential analysis (paper, Sect. 2.6) `run_simulation` calls, in
 order: the GLS periodogram, `significant_peaks`, `classify_peaks`, `prewhitening`
 (and `reverse_prewhitening` if no intruder is accepted), one of the two fits,

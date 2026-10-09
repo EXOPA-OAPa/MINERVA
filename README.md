@@ -8,7 +8,9 @@
 ![Python](https://img.shields.io/badge/python-%E2%89%A53.9-informational)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
-<p align="center"><img src="docs/images/minerva_flowchart.svg" width="860" alt="MINERVA flowchart"></p>
+<p align="center"><img src="docs/images/minerva_overview.svg" width="860" alt="MINERVA overview: target, synthetic star, RV time series, sequential recovery, number of RV observations"></p>
+
+<p align="center"><sub>Detailed diagrams: <a href="docs/api/README.md#detailed-diagrams">synthetic star and RV time series</a> · <a href="docs/api/recovery.md">sequential recovery</a></sub></p>
 
 ## What is MINERVA
 
@@ -72,7 +74,7 @@ observations until the mass is measured with the required precision.
 **Install** (from the repository root, editable mode):
 
 ```bash
-git clone https://github.com/EXOPA-OAPa/MINERVA.git
+git clone https://github.com/<user>/MINERVA.git
 cd MINERVA
 python -m venv .venv && source .venv/bin/activate
 pip install -e .
@@ -168,7 +170,8 @@ MINERVA/
 ├── data/                reference data and YaPSI tracks
 ├── config/              config_example.yaml
 ├── examples/            one configuration per science case
-├── scripts/             run_minerva.py, compress_yapsi_tracks.py, check_same_code.py, make_flowchart.py, make_logo.py
+├── scripts/             run_minerva.py, compress_yapsi_tracks.py, check_same_code.py,
+│                        make_overview.py, make_flowchart.py, make_logo.py
 ├── tests/               regression test and validation checks
 ├── docs/                this documentation
 ├── CHANGELOG.md

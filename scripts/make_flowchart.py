@@ -2,7 +2,9 @@
 Generate the flowchart of MINERVA as a vector image (SVG), used in README.md and docs/.
 
 Usage (from the repository root):
-    python scripts/make_flowchart.py docs/images/minerva_flowchart.svg
+    python scripts/make_flowchart.py docs/images/minerva_flowchart.svg               # complete diagram
+    python scripts/make_flowchart.py docs/images/minerva_simulation.svg simulation   # left panel only
+    python scripts/make_flowchart.py docs/images/minerva_recovery.svg recovery       # right panel only
 
 Edit the boxes below when the code changes; the layout is computed from them.
 """
@@ -11,7 +13,9 @@ import sys
 from pathlib import Path
 
 LOGO = Path(__file__).resolve().parents[1] / "docs" / "images" / "minerva_logo.svg"
-TOP = 62   # vertical space added for the logo
+MODE = sys.argv[2] if len(sys.argv) > 2 else "full"     # "full", "simulation" or "recovery"
+assert MODE in ("full", "simulation", "recovery"), MODE
+TOP = 62 if MODE == "full" else 0   # vertical space added for the logo
 
 W, H = 1500, 1475 + 62
 FONT = "Helvetica, Arial, 'DejaVu Sans', sans-serif"
@@ -74,14 +78,15 @@ out.append('<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" marke
 out.append(f'<rect width="{W}" height="{H}" fill="white"/>')
 
 # Vector logo embedded in the diagram (an SVG shown with <img> cannot load external files)
-logo = LOGO.read_text()
-inner = logo[logo.index('>', logo.index('<svg')) + 1:logo.rindex('</svg>')]
-inner = inner.replace('<title>MINERVA</title>', '')
-logo_h = 100
-k = logo_h / 263
-out.append(f'<g transform="translate({(W - 522 * k) / 2:.1f},10) scale({k:.4f})">{inner}</g>')
-text(W / 2, 128, "one Monte Carlo simulation of a target: synthetic star and RV time series, then sequential recovery",
-     size=14, fill="#555")
+if MODE == "full":
+  logo = LOGO.read_text()
+  inner = logo[logo.index('>', logo.index('<svg')) + 1:logo.rindex('</svg>')]
+  inner = inner.replace('<title>MINERVA</title>', '')
+  logo_h = 100
+  k = logo_h / 263
+  out.append(f'<g transform="translate({(W - 522 * k) / 2:.1f},10) scale({k:.4f})">{inner}</g>')
+  text(W / 2, 128, "one Monte Carlo simulation of a target: synthetic star and RV time series, then sequential recovery",
+       size=14, fill="#555")
 out.append(f'<g transform="translate(0,{TOP})">')
 
 # ---------------- left panel: simulation ----------------
@@ -215,11 +220,23 @@ add = box(CX, add_y, 300, ["Add `step` observations", "(5 by default)"], h=50, f
 arrow([(CX, d6["bottom"]), (CX, add["top"])]); label(CX + 14, d6["bottom"] + 17, "yes", anchor="start")
 arrow([(add["left"], add["cy"]), (783, add["cy"]), (783, r2["cy"]), (r2["left"], r2["cy"])], color="#117A65")
 
-# entry: RV time series -> recovery
-arrow([(rv["right"], rv["cy"]), (745, rv["cy"]), (745, r1["cy"]), (r1["left"], r1["cy"])], color="#B7950B", width=2.2)
+# link between the panels
+if MODE == "full":
+    arrow([(rv["right"], rv["cy"]), (745, rv["cy"]), (745, r1["cy"]), (r1["left"], r1["cy"])], color="#B7950B", width=2.2)
+if MODE == "simulation":
+    arrow([(rv["right"], rv["cy"]), (rv["right"] + 50, rv["cy"])], color="#B7950B", width=2.2)
+    text(rv["right"] + 2, rv["bottom"] + 20, "→ sequential recovery", size=12.5, style="italic", fill="#9A7D0A", anchor="start")
+if MODE == "recovery":
+    arrow([(772, r1["cy"]), (r1["left"], r1["cy"])], color="#B7950B", width=2.2)
+    text(770, r1["cy"] - 12, "RV series", size=12, style="italic", fill="#9A7D0A", anchor="start")
 
 out.append("</g>")
 out.append("</svg>")
+if MODE != "full":
+    vx = 12 if MODE == "simulation" else 747
+    vw, vy, vh = 731, 82, 1381
+    out[0] = f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="{vx} {vy} {vw} {vh}" width="{vw}" height="{vh}">'
+    out[2] = f'<rect x="{vx}" y="{vy}" width="{vw}" height="{vh}" fill="white"/>'
 assert add["bottom"] < H - 10, add["bottom"]
 target = sys.argv[1] if len(sys.argv) > 1 else "docs/images/minerva_flowchart.svg"
 open(target, "w", encoding="utf-8").write("\n".join(out))

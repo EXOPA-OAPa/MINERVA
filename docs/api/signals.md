@@ -2,6 +2,8 @@
 
 [← API reference](README.md)
 
+<p align="center"><img src="../images/minerva_simulation.svg" width="700" alt="Synthetic star and RV time series"></p>
+
 The RV time series is white noise + stellar activity + planet; each epoch has a formal
 error bar (paper, Sects. 2.1, 2.2, 2.4, 2.5).
 

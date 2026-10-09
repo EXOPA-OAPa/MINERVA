@@ -1,0 +1,183 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="747 82 731 1381" width="731" height="1381">
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#444"/></marker></defs>
+<rect x="747" y="82" width="731" height="1381" fill="white"/>
+<g transform="translate(0,0)">
+<rect x="20" y="90" width="715" height="1365" rx="16" fill="#FBFCFC" stroke="#D5D8DC" stroke-width="1.5"/>
+<text x="377.5" y="122" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="19" font-weight="bold" font-style="normal" fill="#1B2631" text-anchor="middle">1 · Synthetic star and RV time series</text>
+<rect x="36" y="140" width="330" height="690" rx="10" fill="none" stroke="#B03A2E" stroke-width="1.8" stroke-dasharray="8,5"/>
+<text x="50" y="162" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="14" font-weight="bold" font-style="normal" fill="#B03A2E" text-anchor="start">Synthetic star</text>
+<text x="354" y="162" font-family="'DejaVu Sans Mono', Menlo, monospace" font-size="12" font-weight="normal" font-style="normal" fill="#B03A2E" text-anchor="end">star.py</text>
+<rect x="55.0" y="180" width="290" height="72" rx="9" fill="#FDEDEC" stroke="#B03A2E" stroke-width="1.6"/>
+<text x="200" y="204.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="14.5" font-weight="bold" font-style="normal" fill="#222" text-anchor="middle">Target parameters</text>
+<text x="200" y="222.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="12" font-weight="normal" font-style="normal" fill="#3a3a3a" text-anchor="middle">catalog row or single_target_params</text>
+<text x="200" y="238.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="12" font-weight="normal" font-style="normal" fill="#3a3a3a" text-anchor="middle">optional bootstrap within the errors</text>
+<text x="200" y="274" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="12" font-weight="normal" font-style="italic" fill="#7B241C" text-anchor="middle">each step is skipped when its value is given</text>
+<rect x="55.0" y="290" width="290" height="56" rx="9" fill="#FDEDEC" stroke="#B03A2E" stroke-width="1.6"/>
+<text x="200" y="314.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="14.5" font-weight="bold" font-style="normal" fill="#222" text-anchor="middle">Age</text>
+<text x="200" y="332.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="12" font-weight="normal" font-style="normal" fill="#3a3a3a" text-anchor="middle">uniform, up to the end of the main sequence</text>
+<polyline points="200,282 200,290" fill="none" stroke="#444" stroke-width="1.6" marker-end="url(#arrow)"/>
+<rect x="55.0" y="376" width="290" height="56" rx="9" fill="#FDEDEC" stroke="#B03A2E" stroke-width="1.6"/>
+<text x="200" y="400.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="14.5" font-weight="bold" font-style="normal" fill="#222" text-anchor="middle">Rotation regime</text>
+<text x="200" y="418.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="12" font-weight="normal" font-style="normal" fill="#3a3a3a" text-anchor="middle">slow 25% · median 50% · fast 25%</text>
+<polyline points="200,346 200,376" fill="none" stroke="#444" stroke-width="1.6" marker-end="url(#arrow)"/>
+<rect x="55.0" y="462" width="290" height="56" rx="9" fill="#FDEDEC" stroke="#B03A2E" stroke-width="1.6"/>
+<text x="200" y="486.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="14.5" font-weight="bold" font-style="normal" fill="#222" text-anchor="middle">Rotation period  P_rot</text>
+<text x="200" y="504.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="12" font-weight="normal" font-style="normal" fill="#3a3a3a" text-anchor="middle">Gallet &amp; Bouvier (2015)</text>
+<polyline points="200,432 200,462" fill="none" stroke="#444" stroke-width="1.6" marker-end="url(#arrow)"/>
+<rect x="55.0" y="548" width="290" height="56" rx="9" fill="#FDEDEC" stroke="#B03A2E" stroke-width="1.6"/>
+<text x="200" y="572.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="14.5" font-weight="bold" font-style="normal" fill="#222" text-anchor="middle">Turnover time τ,  Ro = P_rot / τ</text>
+<text x="200" y="590.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="12" font-weight="normal" font-style="normal" fill="#3a3a3a" text-anchor="middle">YaPSI tracks (Spada et al. 2017)</text>
+<polyline points="200,518 200,548" fill="none" stroke="#444" stroke-width="1.6" marker-end="url(#arrow)"/>
+<rect x="55.0" y="634" width="290" height="72" rx="9" fill="#FDEDEC" stroke="#B03A2E" stroke-width="1.6"/>
+<text x="200" y="658.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="14.5" font-weight="bold" font-style="normal" fill="#222" text-anchor="middle">Activity level  log R'HK</text>
+<text x="200" y="676.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="12" font-weight="normal" font-style="normal" fill="#3a3a3a" text-anchor="middle">Mamajek &amp; Hillenbrand (2008)</text>
+<text x="200" y="692.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="12" font-weight="normal" font-style="normal" fill="#3a3a3a" text-anchor="middle">M dwarfs: Astudillo-Defru et al. (2017)</text>
+<polyline points="200,604 200,634" fill="none" stroke="#444" stroke-width="1.6" marker-end="url(#arrow)"/>
+<rect x="55.0" y="736" width="290" height="72" rx="9" fill="#FDEDEC" stroke="#B03A2E" stroke-width="1.6"/>
+<text x="200" y="760.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="14.5" font-weight="bold" font-style="normal" fill="#222" text-anchor="middle">Activity amplitude  K_act</text>
+<text x="200" y="778.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="12" font-weight="normal" font-style="normal" fill="#3a3a3a" text-anchor="middle">Santos et al. (2000)</text>
+<text x="200" y="794.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="12" font-weight="normal" font-style="normal" fill="#3a3a3a" text-anchor="middle">K dwarfs: GAPS/ArMS relation</text>
+<polyline points="200,706 200,736" fill="none" stroke="#444" stroke-width="1.6" marker-end="url(#arrow)"/>
+<polyline points="200,252 200,260" fill="none" stroke="#444" stroke-width="1.6" marker-end="url(#arrow)"/>
+<rect x="384" y="140" width="338" height="690" rx="10" fill="none" stroke="#1E8449" stroke-width="1.8" stroke-dasharray="8,5"/>
+<text x="398" y="162" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="14" font-weight="bold" font-style="normal" fill="#1E8449" text-anchor="start">RV signals</text>
+<text x="710" y="162" font-family="'DejaVu Sans Mono', Menlo, monospace" font-size="12" font-weight="normal" font-style="normal" fill="#1E8449" text-anchor="end">signals.py</text>
+<rect x="400.0" y="180" width="306" height="72" rx="9" fill="#E9F7EF" stroke="#1E8449" stroke-width="1.6"/>
+<text x="553" y="204.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="14.5" font-weight="bold" font-style="normal" fill="#222" text-anchor="middle">Observing cadence</text>
+<text x="553" y="222.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="12" font-weight="normal" font-style="normal" fill="#3a3a3a" text-anchor="middle">real epochs (weather, seasons)</text>
+<text x="553" y="238.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="12" font-weight="normal" font-style="normal" fill="#3a3a3a" text-anchor="middle">USP sampling for P &lt; 2 d</text>
+<rect x="400.0" y="298" width="306" height="56" rx="9" fill="#E9F7EF" stroke="#1E8449" stroke-width="1.6"/>
+<text x="553" y="322.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="14.5" font-weight="bold" font-style="normal" fill="#222" text-anchor="middle">White noise</text>
+<text x="553" y="340.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="12" font-weight="normal" font-style="normal" fill="#3a3a3a" text-anchor="middle">σ = √(σ_instr² + σ_photon² + σ_planets²)</text>
+<rect x="400.0" y="400" width="306" height="90" rx="9" fill="#E9F7EF" stroke="#1E8449" stroke-width="1.6"/>
+<text x="553" y="425.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="14.5" font-weight="bold" font-style="normal" fill="#222" text-anchor="middle">Activity signal</text>
+<text x="553" y="443.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="12" font-weight="normal" font-style="normal" fill="#3a3a3a" text-anchor="middle">P_rot and P_rot (1 + α): differential rotation</text>
+<text x="553" y="459.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="12" font-weight="normal" font-style="normal" fill="#3a3a3a" text-anchor="middle">new phases and amplitudes every season</text>
+<text x="553" y="475.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="12" font-weight="normal" font-style="normal" fill="#3a3a3a" text-anchor="middle">harmonic P_rot / 2 for high activity</text>
+<rect x="400.0" y="536" width="306" height="72" rx="9" fill="#EBF5FB" stroke="#2471A3" stroke-width="1.6"/>
+<text x="553" y="560.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="14.5" font-weight="bold" font-style="normal" fill="#222" text-anchor="middle">Planet (Keplerian)</text>
+<text x="553" y="578.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="12" font-weight="normal" font-style="normal" fill="#3a3a3a" text-anchor="middle">K_pl from the mass, P and T0 from the transit,</text>
+<text x="553" y="594.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="12" font-weight="normal" font-style="normal" fill="#3a3a3a" text-anchor="middle">eccentricity e, periastron ω</text>
+<rect x="400.0" y="654" width="306" height="72" rx="9" fill="#E9F7EF" stroke="#1E8449" stroke-width="1.6"/>
+<text x="553" y="678.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="14.5" font-weight="bold" font-style="normal" fill="#222" text-anchor="middle">Error bars</text>
+<text x="553" y="696.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="12" font-weight="normal" font-style="normal" fill="#3a3a3a" text-anchor="middle">√(σ_instr² + σ_photon² + σ_activity²)</text>
+<text x="553" y="712.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="12" font-weight="normal" font-style="normal" fill="#3a3a3a" text-anchor="middle">activity term from the GAPS database</text>
+<polyline points="345.0,772.0 372,772.0 372,445.0 400.0,445.0" fill="none" stroke="#B03A2E" stroke-width="1.6" marker-end="url(#arrow)"/>
+<polyline points="345.0,680.0 378,680.0 378,702.0 400.0,702.0" fill="none" stroke="#B03A2E" stroke-width="1.6" stroke-dasharray="6,4" marker-end="url(#arrow)"/>
+<rect x="142.5" y="875" width="470" height="62" rx="9" fill="#FCF3CF" stroke="#B7950B" stroke-width="1.6"/>
+<text x="377.5" y="902.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="14.5" font-weight="bold" font-style="normal" fill="#222" text-anchor="middle">Synthetic RV time series</text>
+<text x="377.5" y="920.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="12" font-weight="normal" font-style="normal" fill="#3a3a3a" text-anchor="middle">RV(t) = white noise + activity + planet, with error bars</text>
+<polyline points="553,830 553,875" fill="none" stroke="#444" stroke-width="1.6" marker-end="url(#arrow)"/>
+<polyline points="200,830 200,875" fill="none" stroke="#444" stroke-width="1.6" marker-end="url(#arrow)"/>
+<rect x="57.5" y="1000" width="640" height="78" rx="9" fill="#F2F3F4" stroke="#7F8C8D" stroke-width="1.6"/>
+<text x="377.5" y="1027.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="14.5" font-weight="bold" font-style="normal" fill="#222" text-anchor="middle">Monte Carlo</text>
+<text x="377.5" y="1045.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="12" font-weight="normal" font-style="normal" fill="#3a3a3a" text-anchor="middle">n_iterations simulations per target, one random generator per target (random_seed + i)</text>
+<text x="377.5" y="1061.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="12" font-weight="normal" font-style="normal" fill="#3a3a3a" text-anchor="middle">→ median and 16th–84th percentiles of N_RV, failures, for every SNR threshold</text>
+<text x="377.5" y="1104" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="12.5" font-weight="normal" font-style="italic" fill="#566573" text-anchor="middle">catalog targets can run in parallel (n_workers)</text>
+<rect x="57.5" y="1130" width="640" height="78" rx="9" fill="#F2F3F4" stroke="#7F8C8D" stroke-width="1.6"/>
+<text x="377.5" y="1157.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="14.5" font-weight="bold" font-style="normal" fill="#222" text-anchor="middle">Reference data  (data/)</text>
+<text x="377.5" y="1175.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="12" font-weight="normal" font-style="normal" fill="#3a3a3a" text-anchor="middle">HARPS-N photon noise (NSTS) · maximum stellar ages · GAPS activity database</text>
+<text x="377.5" y="1191.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="12" font-weight="normal" font-style="normal" fill="#3a3a3a" text-anchor="middle">YaPSI evolutionary tracks · default cadences (HD 164922, TOI-1807)</text>
+<rect x="57.5" y="1232" width="640" height="78" rx="9" fill="#F2F3F4" stroke="#7F8C8D" stroke-width="1.6"/>
+<text x="377.5" y="1259.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="14.5" font-weight="bold" font-style="normal" fill="#222" text-anchor="middle">Outputs</text>
+<text x="377.5" y="1277.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="12" font-weight="normal" font-style="normal" fill="#3a3a3a" text-anchor="middle">results_&lt;target&gt;.txt: one line per simulation</text>
+<text x="377.5" y="1293.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="12" font-weight="normal" font-style="normal" fill="#3a3a3a" text-anchor="middle">results_&lt;catalog&gt;.txt: statistics per target   ·   Log_*.txt   ·   Plots/*.pdf</text>
+<text x="377.5" y="1340" font-family="'DejaVu Sans Mono', Menlo, monospace" font-size="12" font-weight="normal" font-style="normal" fill="#566573" text-anchor="middle">runner.py · simulation.py · summary.py</text>
+<rect x="755" y="90" width="725" height="1365" rx="16" fill="#FBFCFC" stroke="#D5D8DC" stroke-width="1.5"/>
+<text x="1117.5" y="122" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="19" font-weight="bold" font-style="normal" fill="#1B2631" text-anchor="middle">2 · Sequential recovery</text>
+<text x="1117.5" y="144" font-family="'DejaVu Sans Mono', Menlo, monospace" font-size="12" font-weight="normal" font-style="normal" fill="#566573" text-anchor="middle">periodogram.py · fitting.py · detection.py</text>
+<rect x="810.0" y="162" width="330" height="56" rx="9" fill="#E8F6F3" stroke="#117A65" stroke-width="1.6"/>
+<text x="975" y="186.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="14.5" font-weight="bold" font-style="normal" fill="#222" text-anchor="middle">First n = n_start observations</text>
+<text x="975" y="204.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="12" font-weight="normal" font-style="normal" fill="#3a3a3a" text-anchor="middle">in time order (sampling_strategy)</text>
+<rect x="800.0" y="248" width="350" height="56" rx="9" fill="#E8F6F3" stroke="#117A65" stroke-width="1.6"/>
+<text x="975" y="272.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="14.5" font-weight="bold" font-style="normal" fill="#222" text-anchor="middle">GLS periodogram</text>
+<text x="975" y="290.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="12" font-weight="normal" font-style="normal" fill="#3a3a3a" text-anchor="middle">peaks above the FAP thresholds</text>
+<polyline points="975,218 975,248" fill="none" stroke="#444" stroke-width="1.6" marker-end="url(#arrow)"/>
+<polygon points="975,328.0 1085.0,374 975,420.0 865.0,374" fill="#FEF9E7" stroke="#B7950B" stroke-width="1.6"/>
+<text x="975" y="370.5" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="13" font-weight="bold" font-style="normal" fill="#222" text-anchor="middle">Intruder</text>
+<text x="975" y="386.5" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="13" font-weight="bold" font-style="normal" fill="#222" text-anchor="middle">peaks?</text>
+<polyline points="975,304 975,328.0" fill="none" stroke="#444" stroke-width="1.6" marker-end="url(#arrow)"/>
+<rect x="1150.0" y="341" width="300" height="66" rx="9" fill="#E8F6F3" stroke="#117A65" stroke-width="1.6"/>
+<text x="1300" y="362.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="14.5" font-weight="bold" font-style="normal" fill="#222" text-anchor="middle">Pre-whitening</text>
+<text x="1300" y="380.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="12" font-weight="normal" font-style="normal" fill="#3a3a3a" text-anchor="middle">fit and subtract the intruders</text>
+<text x="1300" y="396.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="12" font-weight="normal" font-style="normal" fill="#3a3a3a" text-anchor="middle">in order of decreasing power</text>
+<polyline points="1085.0,374 1150.0,374" fill="none" stroke="#444" stroke-width="1.6" marker-end="url(#arrow)"/>
+<text x="1105.0" y="366" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="12" font-weight="bold" font-style="normal" fill="#555" text-anchor="middle">yes</text>
+<polygon points="1300,433.0 1415.0,479 1300,525.0 1185.0,479" fill="#FEF9E7" stroke="#B7950B" stroke-width="1.6"/>
+<text x="1300" y="475.5" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="13" font-weight="bold" font-style="normal" fill="#222" text-anchor="middle">Planet peak</text>
+<text x="1300" y="491.5" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="13" font-weight="bold" font-style="normal" fill="#222" text-anchor="middle">improves?</text>
+<polyline points="1300,407 1300,433.0" fill="none" stroke="#444" stroke-width="1.6" marker-end="url(#arrow)"/>
+<polygon points="975,503.0 1085.0,549 975,595.0 865.0,549" fill="#FEF9E7" stroke="#B7950B" stroke-width="1.6"/>
+<text x="975" y="545.5" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="13" font-weight="bold" font-style="normal" fill="#222" text-anchor="middle">Planet is the</text>
+<text x="975" y="561.5" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="13" font-weight="bold" font-style="normal" fill="#222" text-anchor="middle">highest peak?</text>
+<polyline points="975,420.0 975,503.0" fill="none" stroke="#444" stroke-width="1.6" marker-end="url(#arrow)"/>
+<text x="989" y="438.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="12" font-weight="bold" font-style="normal" fill="#555" text-anchor="start">no</text>
+<polyline points="1185.0,479 975,479 975,503.0" fill="none" stroke="#444" stroke-width="1.6" marker-end="url(#arrow)"/>
+<text x="1171.0" y="471" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="12" font-weight="bold" font-style="normal" fill="#555" text-anchor="end">none accepted</text>
+<rect x="810.0" y="625.0" width="330" height="56" rx="9" fill="#E8F6F3" stroke="#117A65" stroke-width="1.6"/>
+<text x="975" y="649.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="14.5" font-weight="bold" font-style="normal" fill="#222" text-anchor="middle">Reverse pre-whitening</text>
+<text x="975" y="667.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="12" font-weight="normal" font-style="normal" fill="#3a3a3a" text-anchor="middle">subtract the planet, GLS of the residuals</text>
+<polyline points="975,595.0 975,625.0" fill="none" stroke="#444" stroke-width="1.6" marker-end="url(#arrow)"/>
+<text x="989" y="613.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="12" font-weight="bold" font-style="normal" fill="#555" text-anchor="start">yes</text>
+<polygon points="975,701.0 1090.0,747.0 975,793.0 860.0,747.0" fill="#FEF9E7" stroke="#B7950B" stroke-width="1.6"/>
+<text x="975" y="743.5" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="13" font-weight="bold" font-style="normal" fill="#222" text-anchor="middle">Stellar peak</text>
+<text x="975" y="759.5" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="13" font-weight="bold" font-style="normal" fill="#222" text-anchor="middle">above the FAP?</text>
+<polyline points="975,681.0 975,701.0" fill="none" stroke="#444" stroke-width="1.6" marker-end="url(#arrow)"/>
+<rect x="1150.0" y="702.0" width="300" height="90" rx="9" fill="#E8F6F3" stroke="#117A65" stroke-width="1.6"/>
+<text x="1300" y="727.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="14.5" font-weight="bold" font-style="normal" fill="#222" text-anchor="middle">Simultaneous fit</text>
+<text x="1300" y="745.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="12" font-weight="normal" font-style="normal" fill="#3a3a3a" text-anchor="middle">planet + sinusoid at P_star,</text>
+<text x="1300" y="761.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="12" font-weight="normal" font-style="normal" fill="#3a3a3a" text-anchor="middle">amplitude and phase per season</text>
+<text x="1300" y="777.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="12" font-weight="normal" font-style="normal" fill="#3a3a3a" text-anchor="middle">(planet-only fit if it fails)</text>
+<polyline points="1300,525.0 1300,702.0" fill="none" stroke="#444" stroke-width="1.6" marker-end="url(#arrow)"/>
+<text x="1314" y="543.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="12" font-weight="bold" font-style="normal" fill="#555" text-anchor="start">yes</text>
+<polyline points="1090.0,747.0 1150.0,747.0" fill="none" stroke="#444" stroke-width="1.6" marker-end="url(#arrow)"/>
+<text x="1110.0" y="739.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="12" font-weight="bold" font-style="normal" fill="#555" text-anchor="middle">yes</text>
+<rect x="830.0" y="829.0" width="290" height="56" rx="9" fill="#E8F6F3" stroke="#117A65" stroke-width="1.6"/>
+<text x="975" y="853.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="14.5" font-weight="bold" font-style="normal" fill="#222" text-anchor="middle">Planet-only fit</text>
+<text x="975" y="871.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="12" font-weight="normal" font-style="normal" fill="#3a3a3a" text-anchor="middle">circular orbit, P and T0 fixed</text>
+<polyline points="975,793.0 975,829.0" fill="none" stroke="#444" stroke-width="1.6" marker-end="url(#arrow)"/>
+<text x="989" y="813.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="12" font-weight="bold" font-style="normal" fill="#555" text-anchor="start">no</text>
+<polyline points="865.0,549 812,549 812,857.0 830.0,857.0" fill="none" stroke="#444" stroke-width="1.6" marker-end="url(#arrow)"/>
+<text x="851.0" y="541" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="12" font-weight="bold" font-style="normal" fill="#555" text-anchor="end">no</text>
+<rect x="800.0" y="921.0" width="350" height="74" rx="9" fill="#E8F6F3" stroke="#117A65" stroke-width="1.6"/>
+<text x="975" y="946.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="14.5" font-weight="bold" font-style="normal" fill="#222" text-anchor="middle">Fit statistics</text>
+<text x="975" y="964.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="12" font-weight="normal" font-style="normal" fill="#3a3a3a" text-anchor="middle">χ²_red,  σ_K × max(1, √χ²_red),  SNR = K / σ_K</text>
+<text x="975" y="980.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="12" font-weight="normal" font-style="normal" fill="#3a3a3a" text-anchor="middle">ΔBIC against the null hypothesis</text>
+<polyline points="975,885.0 975,921.0" fill="none" stroke="#444" stroke-width="1.6" marker-end="url(#arrow)"/>
+<polyline points="1300,792.0 1300,958.0 1150.0,958.0" fill="none" stroke="#444" stroke-width="1.6" marker-end="url(#arrow)"/>
+<rect x="800.0" y="1025.0" width="350" height="104" rx="9" fill="#FEF9E7" stroke="#B7950B" stroke-width="1.6"/>
+<text x="975" y="1049.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="14.5" font-weight="bold" font-style="normal" fill="#222" text-anchor="middle">Detection criteria</text>
+<text x="975" y="1067.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="12" font-weight="normal" font-style="normal" fill="#3a3a3a" text-anchor="middle">ΔBIC &gt; delta_bic_threshold,  K &gt; 0</text>
+<text x="975" y="1083.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="12" font-weight="normal" font-style="normal" fill="#3a3a3a" text-anchor="middle">K consistent with the injected K (3σ)</text>
+<text x="975" y="1099.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="12" font-weight="normal" font-style="normal" fill="#3a3a3a" text-anchor="middle">P_star = P_rot, P_rot/2 or P_rot/3 (15%)</text>
+<text x="975" y="1115.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="12" font-weight="normal" font-style="normal" fill="#3a3a3a" text-anchor="middle">K / σ_K above the SNR thresholds</text>
+<polyline points="975,995.0 975,1025.0" fill="none" stroke="#444" stroke-width="1.6" marker-end="url(#arrow)"/>
+<polygon points="975,1145.0 1090.0,1187.0 975,1229.0 860.0,1187.0" fill="#FEF9E7" stroke="#B7950B" stroke-width="1.6"/>
+<text x="975" y="1183.5" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="13" font-weight="bold" font-style="normal" fill="#222" text-anchor="middle">All met at the</text>
+<text x="975" y="1199.5" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="13" font-weight="bold" font-style="normal" fill="#222" text-anchor="middle">highest SNR?</text>
+<polyline points="975,1129.0 975,1145.0" fill="none" stroke="#444" stroke-width="1.6" marker-end="url(#arrow)"/>
+<rect x="1155.0" y="1153.0" width="290" height="68" rx="9" fill="#FDEBD0" stroke="#CA6F1E" stroke-width="1.6"/>
+<text x="1300" y="1183.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="14.5" font-weight="bold" font-style="normal" fill="#222" text-anchor="middle">N_RV for every SNR threshold</text>
+<text x="1300" y="1201.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="12" font-weight="normal" font-style="normal" fill="#3a3a3a" text-anchor="middle">detection (status 1)</text>
+<polyline points="1090.0,1187.0 1155.0,1187.0" fill="none" stroke="#444" stroke-width="1.6" marker-end="url(#arrow)"/>
+<text x="1110.0" y="1179.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="12" font-weight="bold" font-style="normal" fill="#555" text-anchor="middle">yes</text>
+<polygon points="975,1247.0 1090.0,1289.0 975,1331.0 860.0,1289.0" fill="#FEF9E7" stroke="#B7950B" stroke-width="1.6"/>
+<text x="975" y="1285.5" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="13" font-weight="bold" font-style="normal" fill="#222" text-anchor="middle">Observations</text>
+<text x="975" y="1301.5" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="13" font-weight="bold" font-style="normal" fill="#222" text-anchor="middle">left?</text>
+<polyline points="975,1229.0 975,1247.0" fill="none" stroke="#444" stroke-width="1.6" marker-end="url(#arrow)"/>
+<text x="989" y="1247.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="12" font-weight="bold" font-style="normal" fill="#555" text-anchor="start">no</text>
+<rect x="1155.0" y="1255.0" width="290" height="68" rx="9" fill="#F4ECF7" stroke="#7D3C98" stroke-width="1.6"/>
+<text x="1300" y="1285.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="14.5" font-weight="bold" font-style="normal" fill="#222" text-anchor="middle">Observations exhausted</text>
+<text x="1300" y="1303.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="12" font-weight="normal" font-style="normal" fill="#3a3a3a" text-anchor="middle">N_RV = N_total (status 0 or 3)</text>
+<polyline points="1090.0,1289.0 1155.0,1289.0" fill="none" stroke="#444" stroke-width="1.6" marker-end="url(#arrow)"/>
+<text x="1110.0" y="1281.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="12" font-weight="bold" font-style="normal" fill="#555" text-anchor="middle">no</text>
+<rect x="825.0" y="1357.0" width="300" height="50" rx="9" fill="#E8F6F3" stroke="#117A65" stroke-width="1.6"/>
+<text x="975" y="1378.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="14.5" font-weight="bold" font-style="normal" fill="#222" text-anchor="middle">Add `step` observations</text>
+<text x="975" y="1396.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="12" font-weight="normal" font-style="normal" fill="#3a3a3a" text-anchor="middle">(5 by default)</text>
+<polyline points="975,1331.0 975,1357.0" fill="none" stroke="#444" stroke-width="1.6" marker-end="url(#arrow)"/>
+<text x="989" y="1348.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="12" font-weight="bold" font-style="normal" fill="#555" text-anchor="start">yes</text>
+<polyline points="825.0,1382.0 783,1382.0 783,276.0 800.0,276.0" fill="none" stroke="#117A65" stroke-width="1.6" marker-end="url(#arrow)"/>
+<polyline points="772,190.0 810.0,190.0" fill="none" stroke="#B7950B" stroke-width="2.2" marker-end="url(#arrow)"/>
+<text x="770" y="178.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="12" font-weight="normal" font-style="italic" fill="#9A7D0A" text-anchor="start">RV series</text>
+</g>
+</svg>

@@ -2,6 +2,8 @@
 
 [← API reference](README.md)
 
+<p align="center"><img src="../images/minerva_simulation.svg" width="700" alt="Synthetic star and RV time series"></p>
+
 Each function implements one relation of the paper (Sect. 2.3). To change a relation,
 change its function. Functions are called by `run_simulation` in this order (random
 draws included), so the sequence of random numbers is fixed.

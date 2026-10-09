@@ -38,6 +38,7 @@ Results in `examples/NN_<case>/results/`.
 |---|---|
 | `scripts/compress_yapsi_tracks.py <tracks folder> data/YaPSI_Tracks` | copies, gzip-compressed, only the YaPSI tracks used by MINERVA (90 of 111; ~90 MB) |
 | `scripts/make_logo.py [output.svg] [Montserrat font]` | regenerates the vector logo `docs/images/minerva_logo.svg` (needs fontTools and the Montserrat font) |
-| `scripts/make_flowchart.py [output.svg]` | regenerates the flowchart `docs/images/minerva_flowchart.svg` (edit the script when the code changes) |
+| `scripts/make_overview.py [output.svg]` | regenerates the overview diagram of the README, `docs/images/minerva_overview.svg` |
+| `scripts/make_flowchart.py <output.svg> [simulation \| recovery \| full]` | regenerates the detailed diagrams `docs/images/minerva_simulation.svg` and `minerva_recovery.svg` (or the complete one); edit the script when the code changes |
 | `scripts/check_same_code.py old.py new.py` | compares the syntax trees of two versions of a file, ignoring comments, docstrings and messages: for documentation-only changes |
 | `tests/regression/compare.py <output folder>` | compares a run with the regression reference ([tests](testing.md)) |

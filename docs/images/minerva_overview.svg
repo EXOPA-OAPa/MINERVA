@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 400" width="1100" height="400">
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#555"/></marker></defs>
+<rect width="1100" height="400" fill="white"/>
+<rect x="12" y="12" width="1076" height="376" rx="18" fill="#FBFCFC" stroke="#AAB7B8" stroke-width="1.6" stroke-dasharray="9,6"/>
+<text x="32" y="42" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="16" font-weight="bold" font-style="normal" fill="#566573" text-anchor="start">Monte Carlo: n_iterations simulations per target</text>
+<text x="1070" y="42" font-family="'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="13" font-weight="normal" font-style="normal" fill="#566573" text-anchor="end">runner.py · simulation.py</text>
+<rect x="30" y="70" width="150" height="196" rx="12" fill="#F2F3F4" stroke="#7F8C8D" stroke-width="2"/>
+<text x="105.0" y="141.5" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="17.5" font-weight="bold" font-style="normal" fill="#1B2631" text-anchor="middle">Target</text>
+<text x="105.0" y="168.5" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="14.5" font-weight="normal" font-style="normal" fill="#34495E" text-anchor="middle">catalog row</text>
+<text x="105.0" y="189.5" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="14.5" font-weight="normal" font-style="normal" fill="#34495E" text-anchor="middle">or single target</text>
+<text x="105.0" y="210.5" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="14.5" font-weight="normal" font-style="normal" fill="#34495E" text-anchor="middle">(config.yaml)</text>
+<rect x="212" y="70" width="200" height="196" rx="12" fill="#FDEDEC" stroke="#B03A2E" stroke-width="2"/>
+<text x="312.0" y="128.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="17.5" font-weight="bold" font-style="normal" fill="#1B2631" text-anchor="middle">1 · Synthetic star</text>
+<text x="312.0" y="155.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="14.5" font-weight="normal" font-style="normal" fill="#34495E" text-anchor="middle">age, rotation</text>
+<text x="312.0" y="176.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="14.5" font-weight="normal" font-style="normal" fill="#34495E" text-anchor="middle">turnover time τ</text>
+<text x="312.0" y="197.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="14.5" font-weight="normal" font-style="normal" fill="#34495E" text-anchor="middle">log R'HK, K_act</text>
+<text x="312.0" y="228.0" font-family="'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="12.5" font-weight="normal" font-style="normal" fill="#B03A2E" text-anchor="middle">star.py</text>
+<rect x="444" y="70" width="200" height="196" rx="12" fill="#E9F7EF" stroke="#1E8449" stroke-width="2"/>
+<text x="544.0" y="128.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="17.5" font-weight="bold" font-style="normal" fill="#1B2631" text-anchor="middle">2 · RV time series</text>
+<text x="544.0" y="155.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="14.5" font-weight="normal" font-style="normal" fill="#34495E" text-anchor="middle">real cadence, noise</text>
+<text x="544.0" y="176.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="14.5" font-weight="normal" font-style="normal" fill="#34495E" text-anchor="middle">activity signal</text>
+<text x="544.0" y="197.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="14.5" font-weight="normal" font-style="normal" fill="#34495E" text-anchor="middle">planet, error bars</text>
+<text x="544.0" y="228.0" font-family="'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="12.5" font-weight="normal" font-style="normal" fill="#1E8449" text-anchor="middle">signals.py</text>
+<rect x="676" y="70" width="228" height="196" rx="12" fill="#E8F6F3" stroke="#117A65" stroke-width="2"/>
+<text x="790.0" y="119.5" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="17.5" font-weight="bold" font-style="normal" fill="#1B2631" text-anchor="middle">3 · Sequential recovery</text>
+<text x="790.0" y="146.5" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="14.5" font-weight="normal" font-style="normal" fill="#34495E" text-anchor="middle">GLS, pre-whitening</text>
+<text x="790.0" y="167.5" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="14.5" font-weight="normal" font-style="normal" fill="#34495E" text-anchor="middle">planet or planet +</text>
+<text x="790.0" y="188.5" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="14.5" font-weight="normal" font-style="normal" fill="#34495E" text-anchor="middle">activity fit, criteria</text>
+<text x="790.0" y="219.5" font-family="'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="12.5" font-weight="normal" font-style="normal" fill="#117A65" text-anchor="middle">periodogram.py</text>
+<text x="790.0" y="236.5" font-family="'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="12.5" font-weight="normal" font-style="normal" fill="#117A65" text-anchor="middle">fitting.py · detection.py</text>
+<rect x="936" y="70" width="134" height="196" rx="12" fill="#FDEBD0" stroke="#CA6F1E" stroke-width="2"/>
+<text x="1003.0" y="152.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="17.5" font-weight="bold" font-style="normal" fill="#1B2631" text-anchor="middle">N_RV</text>
+<text x="1003.0" y="179.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="14.5" font-weight="normal" font-style="normal" fill="#34495E" text-anchor="middle">for each SNR</text>
+<text x="1003.0" y="200.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="14.5" font-weight="normal" font-style="normal" fill="#34495E" text-anchor="middle">threshold</text>
+<polyline points="182,168.0 210,168.0" fill="none" stroke="#555" stroke-width="2.2" marker-end="url(#arrow)"/>
+<polyline points="414,168.0 442,168.0" fill="none" stroke="#555" stroke-width="2.2" marker-end="url(#arrow)"/>
+<polyline points="646,168.0 674,168.0" fill="none" stroke="#555" stroke-width="2.2" marker-end="url(#arrow)"/>
+<polyline points="906,168.0 934,168.0" fill="none" stroke="#555" stroke-width="2.2" marker-end="url(#arrow)"/>
+<polyline points="874,268 874,300 706,300 706,268" fill="none" stroke="#117A65" stroke-width="2.2" marker-end="url(#arrow)"/>
+<text x="790.0" y="322" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="13.5" font-weight="normal" font-style="italic" fill="#117A65" text-anchor="middle">+ step observations, until the planet is</text>
+<text x="790.0" y="340" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="13.5" font-weight="normal" font-style="italic" fill="#117A65" text-anchor="middle">detected or the observations run out</text>
+<text x="36" y="366" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="14.5" font-weight="normal" font-style="normal" fill="#34495E" text-anchor="start">→ per target: median and 16th–84th percentiles of N_RV over the simulations, and the failures</text>
+</svg>
