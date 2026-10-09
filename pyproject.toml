@@ -22,7 +22,7 @@ dependencies = [
 ]
 
 [project.urls]
-Repository = "https://github.com/<USER>/MINERVA"
+Repository = "https://github.com/EXOPA-OAPa/MINERVA"
 
 [tool.setuptools.packages.find]
 where = ["src"]

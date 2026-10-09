@@ -4,7 +4,7 @@ title: "MINERVA: MInimum observations for accurate Exoplanetary mass estimation 
 type: software
 license: MIT
 version: "1.0.0"
-# repository-code: "https://github.com/<USER>/MINERVA"   # <- insert the repository URL and uncomment
+repository-code: "https://github.com/EXOPA-OAPa/MINERVA"
 authors:
   - family-names: "Di Maio"
     given-names: "Claudia"

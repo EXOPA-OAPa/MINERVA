@@ -72,7 +72,7 @@ observations until the mass is measured with the required precision.
 **Install** (from the repository root, editable mode):
 
 ```bash
-git clone https://github.com/<user>/MINERVA.git
+git clone https://github.com/EXOPA-OAPa/MINERVA.git
 cd MINERVA
 python -m venv .venv && source .venv/bin/activate
 pip install -e .
