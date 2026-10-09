@@ -1,0 +1,45 @@
+# Configuration used to produce the regression reference (tests/regression/reference/).
+# Do not change it: any refactoring must reproduce the reference exactly with this file.
+paths:
+  data_dir: ../../data
+  user_dir: ../../examples/01_catalog
+  output_dir: ../../Output_regression
+
+run_options:
+  debug_plot: False
+  debug_fit_plot: False
+  export_debug_pdf: False
+  show_on_screen: False
+  debug_pdf_all_iter: True
+  bootstrap: False
+  rv_series_pdf: 2             # RV time series figure: True (every simulation), False, or N (first N simulations)
+  n_workers: 1                 # catalog targets in parallel: number of processes, or auto (all cores)
+
+# Analysis parameters (previously fixed in the code). Defaults: values of the paper version.
+analysis:
+  n_start: 10                     # observations at the first step of the sequential recovery
+  step: 5                         # observations added at each step
+  sampling_strategy: sequential   # 'sequential' (realistic campaign) or 'random'
+  fap_star: 0.10                  # false alarm probability for stellar (intruder) peaks
+  fap_planet: 0.50                # false alarm probability for the planet peak
+  delta_bic_threshold: 6.0        # minimum Delta BIC (planet model vs null hypothesis) for a detection
+  random_seed: 42                 # random generator seed (seed + i for the i-th catalog target)
+  gls_method: recurrence          # GLS implementation: recurrence (fastest), exact, or reference (paper version)
+
+general_variables:
+  name_sampling: 'harps.rv'
+  name_sampling_usp: 'time_usp.txt'
+  inputfile_nsts: 'NSTS_noise_new.txt'
+  inputfile_mass_age: 'max_age_from_mass.dat'
+  inputfile_activity: 'PLOT_POINTS_DATA_KG-KP-M-MP-YO-OC-KP-SO.csv'
+  sig_floor: 0.5
+  sig_pl: 2
+  sig_best: [5, 5.5]
+  n_iterations: 10
+
+read_catalog: True
+single_target: False
+
+catalog:
+  namecatalog: 'catalog_example.csv'
+  real_cadence: True

@@ -1,0 +1,100 @@
+# =============================================================================
+# MINERVA configuration file (example)
+# Keys are the same as in the version used for the paper.
+# =============================================================================
+
+# Folders. Relative paths are relative to this configuration file.
+paths:
+  data_dir: ../data            # reference data shipped with MINERVA (tables, YaPSI tracks, default cadences)
+  user_dir: ../examples/01_catalog   # your catalog and cadence files (looked up first, then data_dir)
+  output_dir: ../Output        # results, logs and figures
+
+# Run options (previously flags at the top of main.py)
+run_options:
+  debug_plot: False            # debug figures of pre-whitening and reverse pre-whitening
+  debug_fit_plot: False        # debug figures of the fits
+  export_debug_pdf: False      # write the debug figures to <output_dir>/Plots/DEBUG_<target>.pdf
+  show_on_screen: False        # show the figures interactively (blocks the run)
+  debug_pdf_all_iter: False    # True: GLS and fit diagnostics for every iteration; False: first 3 iterations only
+  bootstrap: False             # resample stellar parameters within their uncertainties at every iteration
+  rv_series_pdf: 2             # RV time series figure: True (every simulation), False, or N (first N simulations)
+  n_workers: 1                 # catalog targets in parallel: number of processes, or auto (all cores)
+
+# Analysis parameters (previously fixed in the code). Defaults: values of the paper version.
+analysis:
+  n_start: 10                     # observations at the first step of the sequential recovery
+  step: 5                         # observations added at each step
+  sampling_strategy: sequential   # 'sequential' (realistic campaign) or 'random'
+  fap_star: 0.10                  # false alarm probability for stellar (intruder) peaks
+  fap_planet: 0.50                # false alarm probability for the planet peak
+  delta_bic_threshold: 6.0        # minimum Delta BIC (planet model vs null hypothesis) for a detection
+  random_seed: 42                 # random generator seed (seed + i for the i-th catalog target)
+  gls_method: recurrence          # GLS implementation: recurrence (fastest), exact, or reference (paper version)
+
+general_variables:
+  # Default observing cadence (one epoch per line, JD - 2450000)
+  name_sampling: 'harps.rv'
+  # Default cadence for ultra-short-period planets
+  name_sampling_usp: 'time_usp.txt'
+  # RV photon noise vs magnitude and spectral type
+  inputfile_nsts: 'NSTS_noise_new.txt'
+  # Maximum stellar age vs mass
+  inputfile_mass_age: 'max_age_from_mass.dat'
+  # Observed RV jitter vs log R'HK (literature compilation)
+  inputfile_activity: 'PLOT_POINTS_DATA_KG-KP-M-MP-YO-OC-KP-SO.csv'
+
+  # Instrumental RV noise [m/s]: 0.5 m/s for HARPS-N (Cosentino et al. 2014); noise scheme of Cloutier et al. (2018, AJ 156, 82)
+  sig_floor: 0.5
+  # RV scatter from additional, unknown planets in the system [m/s]
+  sig_pl: 2
+  # SNR thresholds on K (K / sigma_K): 5 -> 20%, 3.33 -> 30%, 2 -> 50% mass precision
+  sig_best: [5, 5.5]
+  # Number of Monte Carlo simulations per target
+  n_iterations: 100
+
+# Run mode: set exactly one of the two to True
+read_catalog: True      # read the targets from 'namecatalog'
+single_target: False    # use the parameters in 'single_target_params'
+
+catalog:
+  namecatalog: 'catalog_example.csv'
+  # If True, read the cadence file of each target from the catalog column 'Cadence FileName'
+  real_cadence: True
+
+single_target_params:
+  targetname: example
+  real_cadence: False
+  star_mass: 1.0           # [Msun]  required
+  err_star_mass:           # [Msun]  optional, default: 10% of the value
+  star_radius:             # [Rsun]  optional
+  err_star_radius:         # [Rsun]  optional, default: 10% of the value
+  star_temp: 5800          # [K]     required, max 7500 K
+  err_star_temp:           # [K]     optional, default: 100 K
+  sp: 'G2'                 # spectral type, at least the first letter (optional)
+
+  # If v_mag is empty, gaia_mag is used; if both are empty, v_mag = 10
+  v_mag: 9.0
+  gaia_mag:
+
+  # At least one of the two planetary masses is required
+  pl_mass_Mj:              # [M_Jup]
+  pl_mass_Me: 20           # [M_Earth]
+
+  pl_period: 12.0          # [d]     required
+  err_pl_period:           # [d]     optional, default: pl_period / 10
+  transit_midpoint: 9003.4 # [JD - 2450000] required
+
+  # Optional
+  pl_radius_Rj:            # [R_Jup]
+  pl_radius_Re:            # [R_Earth]
+  eccentricity:            # default 0
+  periastron:              # [deg] default 0
+
+  age:                     # [Gyr]   if empty, drawn at random up to the end of the main sequence
+  err_age:                 # [Gyr]   default: 10% of the value
+  vsini_tag:               # 'slow', 'intermediate' or 'fast'; if empty, drawn at random
+  Prot:                    # [d]     if empty, estimated from age and rotation class
+  err_Prot:                # [d]
+  log_Rhk: -4.8            # [dex]   if empty, estimated from the Rossby number
+  err_log_Rhk:             # [dex]   default: 0.05
+  K_act:                   # [m/s]   if empty, from Santos et al. (2000) / GAPS2 relations

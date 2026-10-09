@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "minerva"
+version = "1.0.0"
+description = "Monte Carlo simulations of radial-velocity follow-up: how many RV observations are needed to measure a planetary mass in the presence of stellar activity."
+readme = "README.md"
+authors = [{ name = "Claudia Di Maio" }]
+license = { file = "LICENSE" }
+requires-python = ">=3.9"
+dependencies = [
+    "numpy",
+    "scipy",
+    "pandas",
+    "matplotlib",
+    "seaborn",
+    "astropy",
+    "pyyaml",
+    "tqdm",
+]
+
+[project.urls]
+Repository = "https://github.com/<USER>/MINERVA"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["minerva*"]

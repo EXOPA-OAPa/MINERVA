@@ -1,0 +1,60 @@
+cff-version: 1.2.0
+message: "If you use MINERVA, please cite the paper below (preferred citation) and this software."
+title: "MINERVA: MInimum observations for accurate Exoplanetary mass estimation with Radial Velocity Analysis"
+type: software
+license: MIT
+version: "1.0.0"
+# repository-code: "https://github.com/<USER>/MINERVA"   # <- insert the repository URL and uncomment
+authors:
+  - family-names: "Di Maio"
+    given-names: "Claudia"
+    email: "claudia.dimaio@inaf.it"
+    affiliation: "INAF – Osservatorio Astronomico di Palermo, Italy"
+    # orcid: "https://orcid.org/0000-0000-0000-0000"   # <- insert your ORCID and uncomment
+keywords:
+  - radial velocities
+  - exoplanets
+  - planetary masses
+  - stellar activity
+  - observation planning
+  - Monte Carlo simulations
+  - Ariel
+abstract: >-
+  MINERVA estimates the number of radial-velocity (RV) observations required to
+  measure the masses of transiting planets orbiting FGKM-type stars to a given
+  precision. It simulates realistic RV time series on real observational
+  timestamps, models stellar activity from age, rotation and chromospheric
+  activity through empirical calibrations, and recovers the planetary signal
+  with an incremental periodogram and least-squares fitting procedure.
+preferred-citation:
+  type: article
+  status: submitted
+  title: "Minimum observations for accurate Exoplanetary mass estimation with Radial Velocity Analysis (MINERVA)"
+  journal: "Astronomy & Astrophysics"
+  year: 2026
+  authors:
+    - family-names: "Di Maio"
+      given-names: "C."
+      affiliation: "INAF – Osservatorio Astronomico di Palermo, Italy"
+    - family-names: "Benatti"
+      given-names: "S."
+      affiliation: "INAF – Osservatorio Astronomico di Palermo, Italy"
+    - family-names: "Colombo"
+      given-names: "S."
+      affiliation: "INAF – Osservatorio Astronomico di Palermo, Italy"
+    - family-names: "Piccinini"
+      given-names: "G."
+      affiliation: "INAF – Osservatorio Astronomico di Palermo; Università degli Studi di Palermo, Italy"
+    - family-names: "Spinelli"
+      given-names: "R."
+      affiliation: "INAF – Osservatorio Astronomico di Palermo, Italy"
+    - family-names: "Fardella"
+      given-names: "V."
+      affiliation: "Università degli Studi di Palermo; INAF – Osservatorio Astronomico di Palermo, Italy"
+    - family-names: "Claudi"
+      given-names: "R."
+      affiliation: "INAF – Osservatorio Astronomico di Padova; Università Roma Tre, Italy"
+    - family-names: "Micela"
+      given-names: "G."
+      affiliation: "INAF – Osservatorio Astronomico di Palermo, Italy"
+  # After acceptance: set status to "in-press" (or remove it), and add volume, start (article number) and doi.

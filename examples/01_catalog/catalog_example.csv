@@ -1,0 +1,5 @@
+Planet Name;Star Mass [Ms];Star Mass Error [Ms];Star Radius [Rs];Star Radius Error [Rs];Star Temperature [K];Star Temperature Error [K];Star Spectral Type;Star V Mag;Star Gaia Mag;Planet Mass [Mj];Planet Mass [Me];Planet Radius [Rj];Planet Radius [Re];Planet Period [days];Planet Period Error [days];Transit Mid Time [JD - 2450000];Star Age [Gyr];Star Age Error [Gyr];Stellar Rotation Period [d];Star Rotation Period Error [days];logRhk;logRhk Error;Stellar Activity RV Amplitude [m/s];Eccentricity;Periastron;Cadence FileName
+EX-1 b;0.55;;0.54;;3800;;M1;10.2;;;12;;;9.7;0.01;9001.3;;;;;-5.0;;;;;cadence_example.txt
+EX-2 b;0.75;;0.74;;4500;;K3;9.5;;;40;;;7.0;0.01;9002.1;;;;;-4.3;;;;;cadence_example.txt
+EX-3 b;1.4;;1.5;;6600;;F5;8.0;;;8;;;5.0;0.01;9000.7;;;;;;;;;;cadence_example.txt
+EX-4 b;1.0;;1.0;;5800;;G2;9.0;;;20;;;12.0;0.01;9003.4;;;;;-4.8;;;0.2;60;cadence_example.txt

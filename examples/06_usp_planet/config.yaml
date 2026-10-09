@@ -1,0 +1,72 @@
+# MINERVA example 06_usp_planet
+# Ultra-short-period planet (P < 2 d): high-cadence default sampling (TOI-1807)
+#
+# Run from the repository root:
+#   python scripts/run_minerva.py examples/06_usp_planet/config.yaml
+# Results in examples/06_usp_planet/results/. Paths are relative to this file.
+
+paths:
+  data_dir: ../../data
+  user_dir: .
+  output_dir: results
+run_options:
+  debug_plot: false
+  debug_fit_plot: false
+  export_debug_pdf: false
+  show_on_screen: false
+  debug_pdf_all_iter: false
+  bootstrap: false
+  rv_series_pdf: 2
+  n_workers: 1
+analysis:
+  n_start: 10
+  step: 5
+  sampling_strategy: sequential
+  fap_star: 0.1
+  fap_planet: 0.5
+  delta_bic_threshold: 6.0
+  random_seed: 42
+  gls_method: recurrence
+general_variables:
+  name_sampling: harps.rv
+  name_sampling_usp: time_usp.txt
+  inputfile_nsts: NSTS_noise_new.txt
+  inputfile_mass_age: max_age_from_mass.dat
+  inputfile_activity: PLOT_POINTS_DATA_KG-KP-M-MP-YO-OC-KP-SO.csv
+  sig_floor: 0.5
+  sig_pl: 2
+  sig_best:
+  - 5
+  - 5.5
+  n_iterations: 100
+read_catalog: false
+single_target: true
+single_target_params:
+  targetname: USP_planet
+  real_cadence: false
+  star_mass: 0.76
+  err_star_mass: null
+  star_radius: 0.68
+  err_star_radius: null
+  star_temp: 4730
+  err_star_temp: null
+  sp: K3
+  v_mag: 10.0
+  gaia_mag: null
+  pl_mass_Mj: null
+  pl_mass_Me: 2.6
+  pl_period: 0.549
+  err_pl_period: null
+  transit_midpoint: 9000.1
+  pl_radius_Rj: null
+  pl_radius_Re: null
+  eccentricity: null
+  periastron: null
+  age: null
+  err_age: null
+  vsini_tag: null
+  Prot: null
+  err_Prot: null
+  log_Rhk: -4.6
+  err_log_Rhk: null
+  K_act: null
