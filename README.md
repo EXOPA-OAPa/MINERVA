@@ -212,7 +212,7 @@ If you use MINERVA, please cite:
              Radial Velocity Analysis (MINERVA)}",
   journal = {Astronomy \& Astrophysics},
   year    = 2026,
-  note    = {submitted}
+  note    = {under revision}
 }
 ```
 
