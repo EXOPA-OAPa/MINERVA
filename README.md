@@ -4,7 +4,7 @@
 
 **How many radial-velocity observations are needed to measure the mass of a transiting planet, in the presence of stellar activity and with a realistic observing cadence.**
 
-![A&A](https://img.shields.io/badge/A%26A-in_press-blue
+![A&A](https://img.shields.io/badge/A%26A-in_press-blue)
 ![Python](https://img.shields.io/badge/python-%E2%89%A53.9-informational)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
