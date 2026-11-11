@@ -4,7 +4,7 @@
 
 **How many radial-velocity observations are needed to measure the mass of a transiting planet, in the presence of stellar activity and with a realistic observing cadence.**
 
-![A&A](https://img.shields.io/badge/A%26A-submitted-lightgrey)
+![A&A](https://img.shields.io/badge/A%26A-in_press-blue
 ![Python](https://img.shields.io/badge/python-%E2%89%A53.9-informational)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
@@ -19,7 +19,7 @@ to break the degeneracies of atmospheric retrievals: missions such as Ariel requ
 with a precision of 30–40% for hundreds of targets. **MINERVA** estimates the number of
 radial-velocity (RV) observations needed to reach a given precision on the mass of a
 transiting planet orbiting an FGKM star, for single targets and for large samples
-(Di Maio et al., A&A, submitted).
+(Di Maio et al., A&A, in press).
 
 MINERVA is an *ab initio* forward-modelling simulator: it does not need previous RV
 observations of the target. Each target is simulated many times (Monte Carlo); every
@@ -212,7 +212,8 @@ If you use MINERVA, please cite:
              Radial Velocity Analysis (MINERVA)}",
   journal = {Astronomy \& Astrophysics},
   year    = 2026,
-  note    = {under revision}
+  note    = {in press},
+  eprint  = {xxxx.xxxxx}
 }
 ```
 
